@@ -25,7 +25,7 @@
                     <!-- campo di input testuale -->
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Add Task" aria-label="Recipient's username" aria-describedby="button-addon2" 
-                            v-model="newElement.text">
+                            v-model="newElement.text" @keyup.enter="addNewTask">
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click = "addNewTask">Aggiungi</button>
                     </div>
 

@@ -17,7 +17,7 @@
 <body>
     <div id="app">
         <div class="container">
-            <h1 class="text-center">My To-Do List</h1>
+            <h1 class="text-center fw-bolder py-4">My To-Do List</h1>
 
             <div class="row justify-content-center">
                 <div class="col-md-7 list-group list-group-flush">
@@ -26,7 +26,10 @@
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Add Task" aria-label="Recipient's username" aria-describedby="button-addon2" 
                             v-model="newElement.text" @keyup.enter="addNewTask">
-                        <button class="btn btn-outline-secondary" type="button" id="button-addon2" @click = "addNewTask">Aggiungi</button>
+                        <button class="btn btn-outline-secondary btn-add" type="button" id="button-addon2" @click = "addNewTask">
+                            <img src="img/plus.svg" alt="">
+                            Aggiungi
+                        </button>
                     </div>
 
                     <!-- elementi to do list -->
@@ -43,7 +46,7 @@
                             </div>
 
                             <!-- button: cancella task-->
-                            <button class="btn btn-danger" @click="onBtnDelateClick(i)">
+                            <button class="btn" @click="onBtnDelateClick(i)">
                                 <img src="img/bookmark-x.svg" alt="">
                             </button>
                         </label>

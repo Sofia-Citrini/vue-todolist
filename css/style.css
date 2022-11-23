@@ -1,0 +1,25 @@
+body {
+    background-color: #B2B393;
+}
+
+h1 {
+    color: #2D371D;
+}
+
+.list-group-item{
+    --bs-list-group-color: #2D371D;
+    --bs-list-group-bg: #B2B393;
+    --bs-list-group-border-color: #2D371D;
+}
+
+.form-control {
+    background-color: #A6B086;
+    border: 1px solid #2D371D;
+}
+
+.btn-add{
+    background-color: #A6B086;
+    --bs-btn-color: #2D371D;
+    --bs-btn-border-color: #2D371D;
+    --bs-btn-active-border-color: #2D371D;
+}

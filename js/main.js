@@ -19,6 +19,7 @@ createApp({
             ],
             newElement: {
                 text:"",
+                done:false
             }
 		}
 	},
@@ -27,11 +28,15 @@ createApp({
             this.toDoList.splice(index, 1)
         },
         addNewTask(){
+            if (this.newElement.text === ""){
+                return alert("Add Task non compilato")
+            }
+            
             this.toDoList.push({
                 text:this.newElement.text
             })
-        
+
             this.newElement.text=""
-        }
+        },
     }
 }).mount ('#app')

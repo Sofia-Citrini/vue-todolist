@@ -26,10 +26,12 @@
                         <label for="" class="d-flex align-items-center justify-content-between">
                             <!-- checkbox -->
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"
-                                v-model="element.done">
+                                v-model="element.done" >
 
                             <!-- testo -->
-                            <div class="flex-fill px-3">{{element.text}}</div>
+                            <div class="flex-fill px-3" :class="(element.done === true) ? 'text-decoration-line-through' : '' ">
+                                {{element.text}}
+                            </div>
 
                             <!-- button: cancella task-->
                             <button class="btn btn-danger">

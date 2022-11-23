@@ -18,5 +18,10 @@ createApp({
                 },
             ]
 		}
-	}
+	},
+    methods: {
+        onBtnDelateClick(index) {
+            this.toDoList.splice(index, 1)
+        }
+    }
 }).mount ('#app')

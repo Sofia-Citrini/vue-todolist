@@ -21,22 +21,28 @@
 
             <div class="row justify-content-center">
                 <div class="col-md-7 list-group list-group-flush">
-                    <div class="list-group-item" v-for = "(element, i) in toDoList">
+
+                    <div class="list-group-item" v-for = "element in toDoList">
                         <label for="" class="d-flex align-items-center justify-content-between">
+                            <!-- checkbox -->
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate"
                                 v-model="element.done">
 
+                            <!-- testo -->
                             <div class="flex-fill px-3">{{element.text}}</div>
 
+                            <!-- button: cancella task-->
                             <button class="btn btn-danger">
                                 <img src="img/bookmark-x.svg" alt="">
                             </button>
                         </label>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
